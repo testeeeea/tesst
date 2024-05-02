@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Container</title>
+<style>
+  /* Container wrapper styles */
+  .container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background color for dark mode */
+    color: #fff; /* Text color for dark mode */
+  }
+
+  /* Container styles */
+  .container {
+    margin: 20px; /* Adjust the margin to reduce the gap between containers */
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    background-color: #333; /* Darker background color for containers */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect */
+  .container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* White shadow for hover effect */
+  }
+
+  /* Content inside the container */
+  .container .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color for dark mode */
+    text-align: center;
+  }
+
+  /* Additional styles for better visibility */
+  .container .content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .container .content p {
+    margin: 10px 0;
+  }
+  }
+  header {
+    background-color: #333; /* Dark background color for header */
+    color: #fff; /* Text color for header */
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>Mon portfolio</h1>
+        <p>Beinvenue dans Mon portfolio</p>
+        <img src="https://belacheu.alwaysdata.net/images/USTHB%20-%20Copie.GIF" alt="Profile Picture" class="project-image">
+    </header>
+    
+    <div class="card-content">
+            <button class="btn btn3">Introduction</button>
+            <p>Bonjour, je suis étudiant à l'Université des Sciences et Technologies Haouari Boumedian, ma spécialité est Genie Telecomunication et resaux</p>
+    </div>
+        <div class="container">
+        <section id="projects">
+            <button class="btn btn3">Projets</button>
+            <p>-Creation d'un site web de vente de materiel informatique </p>
+            <p>-Agent de saisie Word Exel Powerpoint </p>
+        </section>
+    </div>
+        <div class="container">
+        <div class="content">
+            <button class="btn btn3">competences</button>
+            <p>-construction d'ordinateurs bureau</p>
+            <p>-reparation d'ordinateur portable</p>
+        </div>
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+          <div class="content">
+            <button class="btn btn3">competences</button>
+            <p>-construction d'ordinateurs bureau</p>
+            <p>-reparation d'ordinateur portable</p>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container-wrapper">
+        <div class="container">
+          <div class="content">
+            <button class="btn btn3">contact</button>
+            <p>Nom:Bourriche Ramy</p>
+            <p>Gmail:Ramy.PCParts@gmail.com</p>
+            <p>telephone:0784658563</p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
